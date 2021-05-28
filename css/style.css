@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+/* font-family: 'Roboto', sans-serif; */
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #8EC5FC;
+  background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  
+
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-font-smoothing: antialiased;
+  font-family: "Roboto", sans-serif;
+  height: 100vh;
+}
+
+button {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Header */
+
+.box-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box-header img {
+  margin-top: 15px;
+  width: 170px;
+}
+
+/* Header Fim */
+
+/* Section Options */
+
+#options {
+  /* background-color: violet; */
+  margin-top: 20px;
+}
+
+#options .options-select {
+  /* background-color: yellow; */
+  width: 90%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#options .box-select {
+  width: 300px;
+  height: 180px;
+  background-color: #000080;
+  cursor: pointer;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin-left: 10px;
+  box-shadow: 0px 8px 4px rgba(0, 0, 0, 0.25);
+}
+
+#options .box-select:hover {
+  background-color: #0000cd;
+  transform: scale(0.8);
+}
+
+#options .box-select a {
+  width: 100%;
+  height: 100%;
+
+  font-size: 16px;
+  color: white;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-align: center;
+
+  letter-spacing: 3px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Section Options Fim */
+
+/* -------------------- MEDIA QUERIES  */
+
+/* Mobile */
+@media (max-width: 730px) {
+  .box-header img {
+    width: 170px;
+  }
+  #options .options-select {
+    /* background-color: red; */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  #options .box-select {
+    width: 100%;
+    height: 80px;
+    margin-bottom: 30px;
+  }
+  #options .box-select a {
+    font-size: 16px;
+  }
+}
+
+/* Tablet */
+
+@media (max-width: 1028px) {
+  #options {
+    margin-top: 50px;
+  }
+  #options .options-select {
+    /* background-color: #0000cd; */
+    width: 90%;
+    height: 100%;
+  }
+  #options .box-select a {
+    padding: 10px;
+    font-size: 12px;
+  }
+}

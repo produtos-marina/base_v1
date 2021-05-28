@@ -1,0 +1,45 @@
+.box-header {
+    /* background-color: red; */
+    margin-bottom: 40px;
+}
+
+/* Section Parada */
+
+#parada {
+    /* background-color: red; */
+    padding: 10px 0 40px 0;
+}
+
+#parada .content-parada {
+    /* background-color: chartreuse; */
+    width: 90%;
+    margin: 0 auto;
+}
+
+#parada .content-parada img {
+    height: 470px;
+    margin-left: 6px;
+    margin-bottom: 6px;
+    border-radius: 8px;
+}
+
+/* Media Queries */
+
+@media (max-width: 730px) {
+    #parada .content-parada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media (max-width: 1028px) {
+    #parada .content-parada {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
